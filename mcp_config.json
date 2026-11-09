@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "slashml-robotics": {
+      "command": "node",
+      "args": ["hooks/slashml-robotics-mcp.js"]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.slashml-ai/slashml-robotics",
+  "title": "SlashML (/ml) Embodied Robotics 6-DoF Spatial Memory",
+  "description": "Persistent 6-DoF SE(3) spatial world state, object trajectories, and affordances for robotics.",
+  "websiteUrl": "https://slashml.ai/use-cases/embodied-robotics.html",
+  "version": "1.0.1",
+  "repository": {
+    "url": "https://github.com/slashml-ai/slashml-robotics",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "pypi",
+      "identifier": "slashml-robotics",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "SLASHML_API_KEY",
+          "description": "Your SlashML API key (sml_live_...) from https://app.slashml.ai",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# / ml (SlashML · https://slashml.ai · github.com/slashml-ai/ml-memory · support@slashml.ai)
+node_modules/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+.DS_Store
+.env
+.env.*

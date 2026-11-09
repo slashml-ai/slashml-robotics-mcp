@@ -1,0 +1,20 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required:
+      - slashmlApiKey
+    properties:
+      slashmlApiKey:
+        type: string
+        description: Your SlashML API key (sml_live_...) from https://app.slashml.ai
+  commandFunction:
+    |-
+    (config) => ({
+      command: 'node',
+      args: ['hooks/slashml-robotics-mcp.js'],
+      env: {
+        CLAUDE_PLUGIN_OPTION_API_KEY: config.slashmlApiKey
+      }
+    })
